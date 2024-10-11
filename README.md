@@ -9,3 +9,13 @@
 
 Код на js у файлі index.html. Запускається в браузері, результат виводиться в консоль браузеру.
 
+<script>
+
+const L = 100; // Number of values, starting from 0
+const S = 3; // Step. L and S must have the greatest common divisor == 1
+
+//Outputs values from 0 to L-1 in a pdeudo-random order (with step = S)
+Array.apply(null,Array(L)).forEach((a,i)=>console.log((i*S%L)))
+
+</script>
+
